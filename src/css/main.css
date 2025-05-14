@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+}
+
+body {
+  background: #eee;
+}
+
+.screen {
+  width: 1080px;
+  height: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+}
+.sphere {
+  position: absolute;
+  z-index: 3;
+  width: 1000px;
+  right: 30px;
+  top: 392px;
+}
+.sphere-sec {
+  position: absolute;
+  z-index: 3;
+  width: 1000px;
+  right: 30px;
+  top: 452px;
+}
+.sphere-white {
+  position: absolute;
+  z-index: 0;
+  top: 440px;
+  left: 51%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  background-color: #fff;
+  filter: blur(15);
+}
+
+.sphere-blue {
+  position: absolute;
+  z-index: 0;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background: #1d83f9;
+  filter: blur(50);
+  opacity: 50%;
+}
+.sphere-white-inside {
+  position: absolute;
+  z-index: 3;
+  top: 410px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 950px;
+  height: 950px;
+  border-radius: 50%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0) 65.87%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  filter: blur(40);
+  opacity: 800%;
+}
+.element {
+  z-index: 1;
+  width: 900px;
+  height: 900px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 240px;
+}
+
+.logo {
+  margin: 60px;
+}
+
+.gradient-1,
+.gradient-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gradient-1 {
+  background: radial-gradient(
+    149.06% 92.84% at 100% 74.71%,
+    #e95b51 0%,
+    #ed9de3 50.48%,
+    #6c95fb 100%
+  );
+  z-index: 1;
+}
+
+.gradient-2 {
+  background: radial-gradient(
+    88.82% 105.98% at 100% 45.65%,
+    #e95b51 0%,
+    #ed9de3 50.48%,
+    #6c95fb 100%
+  );
+  z-index: 2;
+  animation: crossfade 10s ease-in-out infinite alternate;
+}
+
+.screen-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes crossfade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.second-screen {
+  position: relative;
+  z-index: 0;
+  width: 1080px;
+  height: 1920px;
+  margin: 0 auto;
+  background: linear-gradient(
+    to right bottom,
+    #83cb95,
+    #61a9ab,
+    #83cb95,
+    #ded657
+  );
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  margin-left: 50px;
+  gap: 53px;
+}
+
+.card-right {
+  margin-top: -3000px;
+}

@@ -17,14 +17,6 @@ body {
   background: #eee;
 }
 
-.screen {
-  width: 1080px;
-  height: 1920px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  z-index: 5;
-}
 .sphere {
   position: absolute;
   z-index: 3;
@@ -142,10 +134,20 @@ body {
     opacity: 0;
   }
 }
+.screen-all {
+  position: relative;
+}
+.screen {
+  position: absolute;
+  width: 1080px;
+  height: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 5;
+}
 
 .second-screen {
   position: relative;
-  z-index: 0;
   width: 1080px;
   height: 1920px;
   margin: 0 auto;

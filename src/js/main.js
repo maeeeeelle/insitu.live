@@ -107,9 +107,70 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 var tl = gsap.timeline({ repeat: -1 });
-tl.to(".screen", { opacity: 1, duration: 5 });
-tl.to(".screen", { opacity: 0, duration: 2 });
+tl.to(".screen", { opacity: 1, duration: 1 });
+const hand = document.querySelector(".hand");
+
+tl.to(".hand", {
+  scale: 1.5,
+  x: -500,
+  rotate: -90,
+  duration: 1,
+  ease: "power2.inOut",
+});
+tl.to(".hand", {
+  scale: 1.5,
+  x: -800,
+  y: 50,
+  rotate: -50,
+  duration: 1,
+  ease: "power2.inOut",
+});
+tl.to(".hand", {
+  scale: 1.5,
+  x: -1000,
+  y: -190,
+  rotate: 30,
+  duration: 1,
+  ease: "power2.inOut",
+});
+tl.to(".hand", {
+  scale: 1.5,
+  x: -750,
+  y: -500,
+  rotate: -10,
+  duration: 1,
+  ease: "power2.inOut",
+});
+tl.to(".hand", {
+  scale: 1.5,
+  y: -630,
+  rotate: -30,
+  duration: 1,
+  ease: "power2.inOut",
+});
+tl.to(".hand", { scale: 1, duration: 0.1, ease: "power2.inOut" });
+tl.to(".hand", { scale: 1.5, duration: 0.1, ease: "power2.inOut" });
+
+// tl.to(".hand", { scale: 1.5, x: -500, rotate: -90, duration: 1 });
+// tl.to(".hand", { scale: 1.5, x: -800, y: 50, rotate: -50, duration: 1 });
+// tl.to(".hand", { scale: 1.5, x: -1000, y: -190, rotate: 30, duration: 1 });
+// tl.to(".hand", { scale: 1.5, x: -750, y: -500, rotate: -10, duration: 1 });
+// tl.to(".hand", { scale: 1.5, y: -630, rotate: -30, duration: 1 });
+// tl.to(".hand", { scale: 1, duration: 0.1 });
+// tl.to(".hand", { scale: 1.5, duration: 0.1 });
+tl.to(".element, .sphere-blue, .sphere-white", { scale: 0.8, duration: 0.1 });
+tl.to(".hand", { scale: 1.5, duration: 0.1 });
+tl.to(".element, .sphere-blue, .sphere-white", { scale: 3, duration: 0.5 });
+tl.to(".screen", { opacity: 0, duration: 1 });
 tl.to(".card-left", { y: -1000, duration: 2 });
 tl.to(".card-right", { y: 1000, duration: 2 });
-tl.to(".screen", { opacity: 0, duration: 1 });
+tl.to(".screen", { opacity: 1, duration: 0.2 });
+tl.to(".shere, .element, .sphere-bleu, .shere-white", {
+  scale: 3,
+  duration: 0.5,
+});
+tl.to(".shere, .element, .sphere-bleu, .shere-white", {
+  scale: 1,
+  duration: 0.5,
+});
 tl.to(".screen", { opacity: 1, duration: 3 });

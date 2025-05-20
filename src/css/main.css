@@ -26,7 +26,7 @@ body {
 }
 .sphere-sec {
   position: absolute;
-  z-index: 3;
+  z-index: 0;
   width: 1000px;
   right: 30px;
   top: 452px;
@@ -169,4 +169,12 @@ body {
 
 .card-right {
   margin-top: -3000px;
+}
+
+.hand {
+  position: absolute;
+  z-index: 5;
+  margin-top: 1500px;
+  margin-left: 1200px;
+  transform: rotate(180);
 }
